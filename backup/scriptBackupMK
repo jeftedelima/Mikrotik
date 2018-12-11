@@ -1,0 +1,30 @@
+
+# Script to perform backup on mikrotik
+
+:local NAME [/system identity get name]
+
+:local TIMETEMP [/system clock get time]
+:local HORA [:pick $TIMETEMP 0 2]
+:local MIN [:pick $TIMETEMP 3 5]
+:local TIME "$HORA$MIN"
+
+:local DATETEMP [/system clock get date]
+:local DIA [:pick $DATETEMP 4 6]
+:local MESTEMP [:pick $DATETEMP 0 3]
+:local ANO [:pick $DATETEMP 7 11]
+:local MES 00
+
+:if ($MESTEMP = "jan") do={ :set MES 1}
+:if ($MESTEMP = "feb") do={ :set MES 2}
+:if ($MESTEMP = "mar") do={ :set MES 3}
+:if ($MESTEMP = "apr") do={ :set MES 4}
+:if ($MESTEMP = "may") do={ :set MES 5}
+:if ($MESTEMP = "jun") do={ :set MES 6}
+:if ($MESTEMP = "jul") do={ :set MES 7}
+:if ($MESTEMP = "aug") do={ :set MES 8}
+:if ($MESTEMP = "sep") do={ :set MES 9}
+:if ($MESTEMP = "oct") do={ :set MES 10}
+:if ($MESTEMP = "nov") do={ :set MES 11}
+:if ($MESTEMP = "dec") do={ :set MES 12}
+
+/system backup save name="$NAME-$ANO$MES$DIA-$TIME" dont-encrypt=yes
