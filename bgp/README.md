@@ -8,6 +8,8 @@ All scripts php should be in the externalscripts directory for example: "usr/lib
 ![MACROS](https://i.ibb.co/44sm7hx/macroBGP.png)
 
 # Value Mapping
+It is necessary to create the mapping of values with the name "BGP Mikrotik"
+[Value mapping documentation](https://www.zabbix.com/documentation/3.0/manual/config/items/mapping)
 ![MAPEAMENTO DE VALORES](https://i.ibb.co/89cWSHg/mapeamento-de-valores.png)
 
 # Latest Data
