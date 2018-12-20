@@ -1,4 +1,5 @@
-
+# Configuration
+All scripts php should be in the externalscripts directory for example: "usr/lib/zabbix/externalscripts"
 # Macro
 ![MACROS](https://i.ibb.co/44sm7hx/macroBGP.png)
 
