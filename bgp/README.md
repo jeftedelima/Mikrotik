@@ -6,7 +6,7 @@ All scripts php should be in the externalscripts directory for example: "usr/lib
 # Macro
 ![MACROS](https://i.ibb.co/44sm7hx/macroBGP.png)
 
-# Mapeamento de valores
+# Value Mapping
 ![MAPEAMENTO DE VALORES](https://i.ibb.co/89cWSHg/mapeamento-de-valores.png)
 
 # Data
