@@ -1,5 +1,6 @@
 # Apresentation
 This toolkit consists of monitoring the status of BGP peers on Mikrotik RouterOS devices. Through the API access, it is necessary to configure/enable this function in your routerOS.
+![API](https://i.ibb.co/SNy9cBJ/api-mikrotik.png)
 
 # Configuration
 All php scripts should be in the externalscripts directory for example: "usr/lib/zabbix/externalscripts"
